@@ -17,8 +17,6 @@ body{
     min-height: 100vh;
     background: linear-gradient(#c0392b,#8e44ad);
     padding: 5.5rem;
-}
-.abc{
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -337,13 +335,6 @@ header .navbar ul li a:hover{
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, .2);
     border-radius: 1rem;
     backdrop-filter: blur(.4rem);
-    display: flex;
-    width: 38%;
-    margin: 3rem 0;
-    position: absolute;
-    bottom: 4rem;
-    right: 5rem;
-
 }
 .theme-toggler span{
     display: block;
@@ -355,3 +346,15 @@ header .navbar ul li a:hover{
     box-shadow: 0 0 0 .5rem rgba(255, 255, 255,.2),
                 0 1rem 2rem rgba(0, 0, 0, .4);
 }
+/* style for browsers smaller than 1300px */
+
+@media (max-width:1300px) {
+    .theme-toggler{
+        position: absolute;
+        bottom: 4rem;
+        right: 5rem;
+        width: 38%;
+        margin: 3rem 0;
+        display: flex;
+    }
+} 
